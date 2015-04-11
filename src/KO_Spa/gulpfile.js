@@ -1,4 +1,5 @@
-﻿var gulp = require('gulp'),
+/// <vs />
+var gulp = require('gulp'),
  concat = require('gulp-concat'),
  mainBowerFiles = require('main-bower-files'),
  uglify = require('gulp-uglify'),
