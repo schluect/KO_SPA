@@ -1,0 +1,38 @@
+{
+    "name": "KO_Spa",
+    "version": "0.0.0",
+    "authors": [
+        "Todd Schluechtermann <trsch2012@live.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+
+    ],
+    "dependencies": {
+        "bootstrap": "~3.3.4",
+        "jquery": "~2.1.3",
+        "knockout": "~3.3.0",
+        "requirejs-bower": "~2.1.16"
+    },
+    "overrides": {
+        "bootstrap": {
+            "normalize": {
+                "js": "*.js",
+                "css": [ "*.css" ],
+                "fonts": [ "*.eot", "*.svg", "*.ttf", "*.woff", "*.woff2" ]
+            }
+        }
+    },
+    "jquery": {
+        "normalize": {
+            "js": "*.js"
+        }
+    }
+    
+}
