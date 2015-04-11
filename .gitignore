@@ -24,8 +24,9 @@ build/Release
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+src/KO_Spa/node_modules
 
-bower_components
-obj
+src/KO_Spa/bower_components
+src/KO_Spa/obj
 src/KO_Spa/.ntvs_analysis.dat
+src/KO_Spa/build
