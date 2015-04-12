@@ -33,7 +33,7 @@ gulp.task('dev:scripts', ['dev:copy_bowerfiles','dev:clean'], function (cb) {
 gulp.task('dev:copy_bowerfiles', ['dev:clean'], function () {
     return gulp.src(mainBowerFiles(), { base: './bower_components' })
             .pipe(bowerNormalizer({ flatten: true }))
-            .pipe(gulpIgnore.exclude("*/less"))
+            .pipe(gulpIgnore.exclude("*.less"))
             .pipe(gulp.dest('public'));
 });
 
@@ -67,7 +67,7 @@ gulp.task('build:processhtml', ['build:clean'], function (cb) {
 gulp.task('build:bower', ['build:clean'],function (cb) {
     var returnVal = gulp.src(mainBowerFiles(), { base: './bower_components' })
             .pipe(bowerNormalizer({bowerJson:'./bower_build.json',  flatten: true }))
-            .pipe(gulpIgnore.exclude("*/less"))
+            .pipe(gulpIgnore.exclude("*.less"))
             .pipe(gulp.dest('build/public'));
     return returnVal;
 });
