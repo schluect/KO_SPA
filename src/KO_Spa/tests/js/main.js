@@ -38,8 +38,6 @@ var Controller =  function (name, config) {
         }
     };
 };
-
-exports.Controller = Controller;
 var ControllerFactory = (function () {
     var controllers = {};
     return {
@@ -55,11 +53,11 @@ var ControllerFactory = (function () {
         }
     }
  }());
-define('RouteHandler', ['ControllerFactory'], function (ControllerFactory) {
+var RouteHandler = function () {
     return function appViewModel() {
         this.firstName = ko.observable('Bert');
         this.firstNameCaps = ko.pureComputed(function () {
             return this.firstName().toUpperCase();
         }, this);
     };
-});
+};

@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="css/mocha.css" />
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="js/jquery.js"></script>
+    <script src="js/chai.js"></script>
+    <script src="js/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    </script>
+    <script src="../scripts/MVC/BaseController.js"></script>
+    <script src="../scripts/App/Controllers/TestController.js"></script>
+    <script src="../scripts/MVC/ControllerFactory.js"></script>
+    <script src="../scripts/MVC/RouteHandler.js"></script>
+    <script src="ControllerTests.js"></script>
+    <script>mocha.run();</script>
+</body>
+</html>
